@@ -13,9 +13,10 @@ using namespace std;
 int main(){
     int array[10];
     int number_of_elements;
-    cout<<"Enter the number of elements : ";
+    cout<<"Enter n : ";
     cin>>number_of_elements;
 
+    cout<<"Enter"<<number_of_elements<<" Values : ";
     // read all the entered element and store in "array"
     for(int i=0;i<number_of_elements;i++){
         cin>>array[i];
