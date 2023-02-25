@@ -18,5 +18,6 @@ int main() {
     cin>>s2;
     // concatenate sl and s2
     s1+=s2;
-    cout<<"The concatenated string is "<<s1; return 0;
+    cout<<"The concatenated string is "<<s1;
+    return 0;
 }
