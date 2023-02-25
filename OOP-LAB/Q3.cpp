@@ -6,11 +6,12 @@
 #include<iostream>
 using namespace std;
 
-Class Student{
+class Student{
 private:
     string name;
     int id;
     // default constructor
+public:
     Student(){
         name = "noname";
         id = 0;
@@ -20,27 +21,28 @@ private:
         this->name=name;
         this->id=id;
     }
+public:
+    // "display()" will print the output
     void display(){
         cout<<"The student name : "<<name<<endl;
         cout<<"The student id : "<<id<<endl;
     }
+    // overloading new operator
     void *operator new(size_t size){
         void *pointer;
         pointer = malloc(size);
         return pointer;
     }
+    // overloading delete operator
     void operator delete(void *pointer){
         free(pointer);
     }
 };
 
 
-int main(){
+int main() {
     Student *nileshptr;
-    nileshptr = new Student("nilesh kumar yadav",69);
+    nileshptr = new Student("nilesh kumar yadav", 69);
     nileshptr->display();
-
-
-
-
+    return 0;
 }
