@@ -39,7 +39,7 @@ public:
     }
 };
 
-
+// do not write the int main() section in the codetantra's code editor.
 int main() {
     Student *nileshptr;
     nileshptr = new Student("nilesh kumar yadav", 69);
