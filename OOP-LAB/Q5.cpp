@@ -13,7 +13,7 @@ void concat(char * s1, char * s2){
     while(*(++s1));
     
     // using while loop to copy characters of second string pointed as 's2' at the end of first string pointed as 's2'
-    while(*(s1++) = *(s2++));
+    while((*(s1++) = *(s2++)));
 } 
 
 int main() {
