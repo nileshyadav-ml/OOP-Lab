@@ -44,5 +44,6 @@ int main() {
     Student *nileshptr;
     nileshptr = new Student("nilesh kumar yadav", 69);
     nileshptr->display();
+    delete nileshptr;
     return 0;
 }
